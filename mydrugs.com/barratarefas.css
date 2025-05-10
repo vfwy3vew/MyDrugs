@@ -8,6 +8,12 @@
     font-family: sans-serif;
 }
 
+.textocima{
+    position: absolute;
+    left: 40%;
+    font-family: sans-serif;
+}
+
 .menu-esquerdo,
 .menu-direito {
     display: flex;

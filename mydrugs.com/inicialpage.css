@@ -39,6 +39,10 @@
     transform: scale(1.05);
 }
 
+.botoes2 img:active{
+    transform: scale(0.9);
+}
+
 .botoes1{
     position: absolute;
     left: 27%;
@@ -57,4 +61,8 @@
 
 .botoes1 img:hover{
     transform: scale(1.05);
+}
+
+.botoes1 img:active{
+    transform: scale(0.9);
 }
