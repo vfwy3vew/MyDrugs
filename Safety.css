@@ -8,23 +8,20 @@ html, body {
     font-family: sans-serif;
   }
   
-  /* TÍTULO centralizado e com espaçamento */
   .titulos h1 {
-    position: static; /* remove posicionamento relativo */
+    position: static;
     text-align: center;
     margin: 2rem auto;
     font-size: 2rem;
   }
-  
-  /* TEXTO alinhado à esquerda com padding */
+
   .textos p {
     position: static;
     padding: 0 2rem;
     font-size: 1rem;
     line-height: 1.6;
   }
-  
-  /* RESPONSIVO opcional (ex: para celulares) */
+
   @media (max-width: 600px) {
     .titulos h1 {
       font-size: 1.5rem;

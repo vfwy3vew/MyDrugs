@@ -58,6 +58,11 @@
     transform: scale(0.9);
   }
   
+  .textocima{
+    position: absolute;
+    left: 43%;
+  }
+
   @media (max-width: 768px) {
     .new-product img {
       max-width: 90%;
