@@ -1,17 +1,37 @@
-html,body{
+html, body {
     overflow-x: hidden;
-}
-
-.segurança{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .segurança {
     font-family: sans-serif;
-}
-
-.titulos h1{
-    position: relative;
-    left: 40%;
-}
-
-.textos p{
-    position: relative;
-    left: 2%;
-}
+  }
+  
+  /* TÍTULO centralizado e com espaçamento */
+  .titulos h1 {
+    position: static; /* remove posicionamento relativo */
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+  
+  /* TEXTO alinhado à esquerda com padding */
+  .textos p {
+    position: static;
+    padding: 0 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* RESPONSIVO opcional (ex: para celulares) */
+  @media (max-width: 600px) {
+    .titulos h1 {
+      font-size: 1.5rem;
+    }
+  
+    .textos p {
+      padding: 0 1rem;
+    }
+  }
+  

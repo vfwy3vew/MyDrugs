@@ -1,71 +1,67 @@
-html,body{
-    overflow-x: hidden;
-}
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
 
-.paginavendasesq{
-    position: absolute;
-    bottom: -60%;
-    left: 5%;
-    color: rgb(97, 92, 85);
-    transition: transform 0.3s ease;
+  .paginavendasesq {
     display: inline-block;
-    width: 50%;
-}
+    width: 30%;
+    margin: 2rem 1%;
+    color: rgb(97, 92, 85);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
 
-.paginavendasesq img{
-    height: 40%;
-    width: 40%;
+  .paginavendasmeio {
+    display: inline-block;
+    width: 30%;
+    margin: 2rem 1%;
+    color: rgb(97, 92, 85);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .paginavendasdir {
+    display: inline-block;
+    width: 30%;
+    margin: 2rem 1%;
+    color: rgb(97, 92, 85);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .paginavendasesq img,
+  .paginavendasmeio img,
+  .paginavendasdir img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 5%;
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-.paginavendasesq img:hover{
+  }
+  
+  .paginavendasesq img:hover,
+  .paginavendasmeio img:hover,
+  .paginavendasdir img:hover {
     transform: scale(1.05);
-}
-
-
-.paginavendasmeio{
-    position: absolute;
-    bottom: -60%;
-    left: 37%;
-    color: rgb(97, 92, 85);
-    transition: transform 0.3s ease;
-    display: inline-block;
-    width: 50%;
-}
-
-.paginavendasmeio img{
-    height: 40%;
-    width: 40%;
-    border-radius: 5%;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.paginavendasmeio img:hover{
-    transform: scale(1.05);
-}
-
-
-.paginavendasdir{
-    position: absolute;
-    bottom: -60%;
-    left: 70%;
-    color: rgb(97, 92, 85);
-    transition: transform 0.3s ease;
-    display: inline-block;
-    width: 50%;
-}
-
-.paginavendasdir img{
-    height: 40%;
-    width: 40%;
-    border-radius: 5%;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.paginavendasdir img:hover{
-    transform: scale(1.05);
-}
+  }
+  
+  @media (max-width: 768px) {
+    .paginavendasesq,
+    .paginavendasmeio,
+    .paginavendasdir {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .paginavendasesq img,
+    .paginavendasmeio img,
+    .paginavendasdir img {
+      max-width: 100%;
+    }
+  }
+  

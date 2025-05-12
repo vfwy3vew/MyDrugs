@@ -1,40 +1,65 @@
 * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      background: #fff;
-    }
+body {
+  background: #fff;
+  font-family: sans-serif;
+}
 
-    .carousel-container {
-    width: 10%;
-    height: calc(100vw / 3); 
-    max-width: 100%;
-    overflow: hidden;
-    margin: -39% 0 0 89%;
-    border-radius: 12px;
-    }
-    .carousel-track {
-        display: flex;
-        flex-direction: column;
-        height: 800%; 
-        animation: slide-vertical 40s linear infinite;
-    }
+/* Container responsivo fixado no canto inferior direito */
+.carousel-container {
+  width: 20vw; /* Responsivo: 20% da largura da tela */
+  max-width: 200px;
+  aspect-ratio: 0.5 / 2; /* Proporção vertical */
+  overflow: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 12px;
+  z-index: 100;
+}
 
-    .slide {
-       flex: 0 0 12.5%;
-    }
+/* Trilho com animação vertical */
+.carousel-track {
+  display: flex;
+  flex-direction: column;
+  height: 200%; /* Ajuste com base no número de slides */
+  animation: slide-vertical 30s linear infinite;
+}
 
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+/* Slide individual ocupa parte proporcional */
+.slide {
+  flex: 0 0 25%; /* 4 imagens por vez → 100/4 = 25% */
+}
 
-    @keyframes slide-vertical {
-      0%   { transform: translateY(0%); }
-      100% { transform: translateY(-50%); }
-    }
+/* Imagens adaptadas ao espaço */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Animação vertical */
+@keyframes slide-vertical {
+  0%   { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
+}
+
+/* MOBILE: menor tamanho e menos espaço ocupado */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 30vw;
+    max-width: 150px;
+    aspect-ratio: 1 / 2;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .slide {
+    flex: 0 0 50%; /* Mostra 2 imagens por vez */
+  }
+}
