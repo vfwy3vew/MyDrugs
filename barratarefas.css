@@ -1,0 +1,56 @@
+.barradecima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+}
+
+.textocima{
+    position: absolute;
+    left: 40%;
+    font-family: sans-serif;
+}
+
+.menu-esquerdo,
+.menu-direito {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-centro{
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.logo-centro img {
+    height: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.logo-centro img:hover{
+    transform: scale(1.1);
+}
+
+.logo-centro{
+    text-decoration: none;
+}
+
+.barradecima span {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+}
+
+.barradecima span:hover {
+    color: orange;
+}
+
+.menu-esquerdo a, .menu-direito a{
+    text-decoration: none;
+}

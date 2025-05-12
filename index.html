@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDrugs</title>
+    <link rel="stylesheet" href="barratarefas.css">
+    <link rel="icon" type="image/x-icon" href="https://mydrugs123.web.app/static/media/WhiteLogo.83a0b999.png">
+    <link rel="stylesheet" href="inicialpage.css">
+    <link rel="stylesheet" href="cssgeral.css">
+</head>
+<body>
+    <div class="barra">
+        <div class="barradecima">
+            <div class="menu-esquerdo">
+                <a href="ShopPage.html"><span>SHOP</span></a>
+                <a href="FAQ.html"><span>FAQ</span></a>
+            </div>
+
+            <div class="logo-centro">
+                <a href="index.html"><img src="logomydrugs.png" alt="Logo"></a>
+            </div>
+
+            <div class="menu-direito">
+                <a href="Safety.html"><span>SAFETY</span></a>
+                <a href="Contact.html"><span>CONTACT</span></a>
+            </div>
+        </div>
+
+        <div class="textocima">
+            <h1>DAILY PROMO</h1>
+        </div>
+        <div class="new-product">
+            <div class="produt1">
+                <img src="mydrugsProp1.jpg" id="imagem" alt="">
+            </div>
+        </div>
+
+        <div class="botoes1">
+            <img src="botaoesquerda.png" id="botaoesquerda" alt="Botão Esquerda">
+        </div>
+
+        <div class="botoes2">
+            <img src="botaodireita.png" id="botaodireita" alt="Botão Direita">
+        </div>
+
+        <script>
+            document.getElementById("botaodireita").addEventListener("click", function() {
+            document.getElementById("imagem").src = "BlueSkyProp2.jpg";
+        });
+
+            document.getElementById("botaoesquerda").addEventListener("click", function() {
+            document.getElementById("imagem").src = "mydrugsProp1.jpg";
+        });
+    </script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+html,body{
+    overflow-x: hidden;
+}
+
+.segurança{
+    font-family: sans-serif;
+}
+
+.titulos h1{
+    position: relative;
+    left: 40%;
+}
+
+.textos p{
+    position: relative;
+    left: 2%;
+}

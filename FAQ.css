@@ -1,0 +1,18 @@
+.perguntas details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 1px 1px 0px #ddd;
+  cursor: pointer;
+  font-family: sans-serif;
+  border-radius: 20px;
+}
+
+.perguntas details > p{
+    font-family: sans-serif;
+}
+
+.perguntas details{
+    margin-bottom: 2%;
+}

@@ -1,0 +1,53 @@
+.new-product{
+    position: absolute;
+    left: 35%;
+    bottom: 15%;
+    color: rgb(97, 92, 85);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.new-product img{
+    height: 40%;
+    width: 40%;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.new-product img:hover{
+    transform: scale(1.02);
+}
+
+.botoes2{
+    position: absolute;
+    left: 66%;
+    bottom: 40%;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.botoes1{
+    position: absolute;
+    left: 27%;
+    bottom: 40%;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    
+}
+
+.botoes1 img, .botoes2 img{
+    width: 10%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.botoes1 img:hover, .botoes2 img:hover{
+    transform: scale(1.05);
+}
+
+.botoes1 img:active, .botoes2 img:active{
+    transform: scale(0.9);
+}
